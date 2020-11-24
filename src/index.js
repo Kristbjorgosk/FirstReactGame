@@ -102,11 +102,6 @@ class Game extends React.Component {
     const history = this.state.history;
     const current = history[this.state.stepNumber];
     const winner = calculateWinner(current.squares);
-    // map over the history
-    // const moves = history.map((step, move) => {
-    //   const desc = move ? "Undo move" : "Start a new game";
-    //   return (
-    // the buttons to undo or sart again
     const moves = (
       <>
         <li>
